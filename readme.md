@@ -1,9 +1,11 @@
 [Purely](https://github.com/mikaelvesavuori/purely) is part of a family of web development tools which also includes [Barely](https://github.com/mikaelvesavuori/barely), [Minimally](https://github.com/mikaelvesavuori/minimally) and [Only](https://github.com/beingstudio/only).
 
 ---
-
 # Purely
 React-based SPA development boilerplate with performance in mind, inspired by [react-boilerplate](https://github.com/react-boilerplate/react-boilerplate).
+
+## Status
+Note that this project is still unstable but should be usable.
 
 ## Features
 - **Performant**: Asynchronous loading of CSS and optimized script timing with async/defer
