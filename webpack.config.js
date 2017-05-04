@@ -12,7 +12,7 @@ module.exports = {
 	watch: false,
 	context: srcDir,
 	entry: [
-		"./main.js"
+		"./app.js"
 	],
 	output: {
 		path: distDir,
@@ -41,6 +41,9 @@ module.exports = {
 				enforce: "pre",
 				test: /\.(js|jsx)$/,
 				loader: "eslint-loader",
+				options: {
+					emitWarning: true
+				},
 				exclude: /node_modules/,
 			},
 			{
@@ -51,6 +54,7 @@ module.exports = {
 						presets: [
 							["es2015", {"modules": false}],
 							"stage-0",
+							"react"
 						]
 					}
 				}],
