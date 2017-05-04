@@ -1,0 +1,23 @@
+article {
+	font-size: 14px;
+}
+
+article a {
+	color: rgb(100, 100, 200);
+}
+
+article p {
+	line-height: 1.5;
+}
+
+body {
+	font-family: Helvetica Neue;
+}
+
+* {
+	color: rgb(80, 80, 255);
+
+	@media screen and (max-width: 1024px) {
+		color: rgb(255, 80, 80);
+	}
+}
