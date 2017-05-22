@@ -1,6 +1,5 @@
 module.exports = {
 	"parser": "babel-eslint",
-
 	parserOptions: {
 		"ecmaFeatures": {
 			"jsx": true,
@@ -10,7 +9,7 @@ module.exports = {
 	"env": {
 		"browser": true
 	},
-	"extends": "eslint:recommended",
+	"extends": ["eslint:recommended", "plugin:react/recommended"],
 	"rules": {
 		"brace-style": [1, "stroustrup"],
 		"curly": 1,
@@ -18,8 +17,12 @@ module.exports = {
 		"indent": [2, "tab", {"SwitchCase": 1}],
 		"no-mixed-spaces-and-tabs": [2, "smart-tabs"],
 		"no-undef": [0],
+		"no-unused-vars": [0],
 		"semi": [1, "always"],
 		"space-infix-ops": [1, {"int32Hint": false}],
-		"quotes": [1, "double"]
+		"quotes": [1, "double"],
+		// React specific ESLint rules below
+		"react/jsx-uses-react": "error",
+		"react/jsx-uses-vars": "error",
 	}
 }

@@ -12,7 +12,7 @@ module.exports = {
 	watch: false,
 	context: srcDir,
 	entry: [
-		"./app.js"
+		"./index.js"
 	],
 	output: {
 		path: distDir,
@@ -32,6 +32,7 @@ module.exports = {
 		]
 	},
 	devServer: {
+		historyApiFallback: true, // For redux and react-outer
 		contentBase: srcDir,
 		publicPath: "/"
 	},
@@ -106,6 +107,11 @@ module.exports = {
 				handler: "cacheFirst",
 				urlPattern: /[.]{mp3,mp4}$/
 			}],
+		}),
+		new webpack.DefinePlugin({
+			"process.env": {
+				NODE_ENV: JSON.stringify("development") //production
+			}
 		}),
 		new webpack.optimize.UglifyJsPlugin({
 			mangle: {

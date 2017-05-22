@@ -6,7 +6,7 @@ import { BrowserRouter, Route, browserHistory } from "react-router-dom";
 import PropTypes from "prop-types";
 
 // Import main app container
-import AppContainer from "./containers/App/index";
+import App from "./containers/App/index";
 
 // Import the SCSS if you'd rather use PostCSS/CSSnext/Sass
 import "./styles/main.scss";
@@ -23,16 +23,13 @@ import * as actions from "./actions/actions"; // Potentially redundant
 /*
 <BrowserRouter history={browserHistory}>
 	<Route path="/" component={AppContainer} />
-	<AppContainer />
 </BrowserRouter>
 */
 
 // Setup root element to render
 const Root = ({store}) => (
 	<Provider store={store}>
-		<BrowserRouter history={browserHistory}>
-			<Route path="/" component={AppContainer} />
-		</BrowserRouter>
+		<App />
 	</Provider>
 );
 
