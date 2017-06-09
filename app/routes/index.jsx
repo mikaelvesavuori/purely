@@ -9,17 +9,20 @@ import FrontView from "containers/FrontView/";
 import ButtonsView from "containers/ButtonsView/";
 import CounterView from "containers/CounterView/";
 
-import Links from "components/Links";
+import Sidebar from "containers/Sidebar";
+import ViewArea from "components/ViewArea/ViewArea";
 
 class Routes extends React.Component {
 	render() {
 		return (
 			<Router>
 				<div>
-					<Route exact path="/" component={FrontView}></Route>
-					<Route path="/buttons" component={ButtonsView}></Route>
-					<Route path="/counter" component={CounterView}></Route>
-					<Links />
+					<Sidebar text="sidebar" />
+					<ViewArea>
+						<Route exact path="/" component={FrontView}></Route>
+						<Route path="/buttons" component={ButtonsView}></Route>
+						<Route path="/counter" component={CounterView}></Route>
+					</ViewArea>
 				</div>
 			</Router>
 		);
