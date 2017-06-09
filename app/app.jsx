@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
 import AppContainer from "./containers/App/index";
 
 // Import the SCSS if you'd rather use PostCSS/CSSnext/Sass
-import "./styles/main.scss";
+//import "./styles/main.scss";
 
 // Setup Redux reducers
 import rootReducer from "./reducers/index";

@@ -23,7 +23,7 @@ You will need to do some changes to deactivate Styled Components.
 ### index.html
 - Uncomment the CSS and LoadCSS sections at the bottom of the document
 
-### app.js
+### app.jsx
 - Uncomment `import "./main.scss";`
 
 ### The components/containers folders
