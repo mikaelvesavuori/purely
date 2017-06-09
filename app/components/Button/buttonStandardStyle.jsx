@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
+import { css } from "styled-components";
 
-const Button = styled.button`
+const buttonStandardStyle = css`
 	display: block;
-	width: ${props => props.small ? "auto" : "33%"};
+	width: ${props => props.small ? "33%" : "100%"};
 	height: 40px;
 	margin: 0 auto;
+	margin-bottom: 2rem;
 	border-radius: 3px;
 	font-size: 1.5rem;
 	text-align: center;
@@ -19,4 +19,4 @@ const Button = styled.button`
 	}
 `;
 
-export default Button;
+export default buttonStandardStyle;

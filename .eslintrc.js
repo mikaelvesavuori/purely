@@ -9,6 +9,9 @@ module.exports = {
 	"env": {
 		"browser": true
 	},
+	"plugins": [
+		"compat"
+	],
 	"extends": ["eslint:recommended", "plugin:react/recommended"],
 	"rules": {
 		"brace-style": [1, "stroustrup"],
@@ -24,5 +27,7 @@ module.exports = {
 		// React specific ESLint rules below
 		"react/jsx-uses-react": "error",
 		"react/jsx-uses-vars": "error",
+		// ESLint compatibility checking
+		//"compat/compat": 2
 	}
 }

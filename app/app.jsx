@@ -20,13 +20,6 @@ import store from "./store/index";
 // Setup Redux actions
 import * as actions from "./actions/actions"; // Potentially redundant
 
-/*
-<BrowserRouter history={browserHistory}>
-	<Route path="/" component={AppContainer} />
-	<AppContainer />
-</BrowserRouter>
-*/
-
 // Setup root element to render
 const Root = ({store}) => (
 	<Provider store={store}>

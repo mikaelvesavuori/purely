@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import * as actions from "../../actions/actions";
-import Counter from "../../components/Counter/Counter";
+import * as actions from "actions/actions";
+import Counter from "components/Counter/";
 
 // Map Redux state to component props
 function mapStateToProps(state) {

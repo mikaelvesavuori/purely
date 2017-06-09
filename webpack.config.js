@@ -12,7 +12,7 @@ module.exports = {
 	watch: false,
 	context: srcDir,
 	entry: [
-		"./index.js"
+		"./index.jsx"
 	],
 	output: {
 		path: distDir,
@@ -20,7 +20,8 @@ module.exports = {
 	},
 	resolve: {
 		modules: [
-			"./node_modules"
+			path.resolve("./app"),
+			path.resolve("./node_modules")
 		],
 		extensions: [
 			".js",
@@ -110,7 +111,7 @@ module.exports = {
 		}),
 		new webpack.DefinePlugin({
 			"process.env": {
-				NODE_ENV: JSON.stringify("development") //production
+				NODE_ENV: JSON.stringify("production") //development
 			}
 		}),
 		new webpack.optimize.UglifyJsPlugin({
