@@ -1,0 +1,29 @@
+{
+	"short_name": "App",
+	"name": "Application Name",
+	"icons": [
+		{
+			"src": "media/icons/apple-touch-icon-57x57.jpg",
+			"type": "image/jpg",
+			"sizes": "57x57"
+		},
+		{
+			"src": "media/icons/apple-touch-icon-114x114.jpg",
+			"type": "image/jpg",
+			"sizes": "114x114"
+		},
+		{
+			"src": "media/icons/apple-touch-icon-152x152.jpg",
+			"type": "image/jpg",
+			"sizes": "152x152"
+		}
+	],
+	"start_url": "/index.html",
+	"display": "fullscreen",
+	"description": "The app that does *THIS*",
+	"background_color": "#1daded",
+	"theme_color": "#1daded",
+	"orientation": "portrait-primary",
+	"dir": "ltr",
+	"lang": "en-US"
+}
