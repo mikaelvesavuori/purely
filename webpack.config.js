@@ -30,7 +30,11 @@ module.exports = {
 			".scss",
 			".css",
 			".html"
-		]
+		],
+		"alias": {
+			"react": "preact-compat",
+			"react-dom": "preact-compat"
+		}
 	},
 	devServer: {
 		historyApiFallback: true, // For redux and react-outer
