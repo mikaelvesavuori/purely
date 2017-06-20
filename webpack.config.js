@@ -11,12 +11,13 @@ const distDir = path.resolve(__dirname, "dist");
 module.exports = {
 	watch: false,
 	context: srcDir,
-	entry: [
-		"./index.jsx"
-	],
+	entry: {
+		app: "./index.jsx",
+		vendor: ["react", "react-dom", "react-router"]
+	},
 	output: {
 		path: distDir,
-		filename: "[name].js",
+		filename: "[name].[hash].js",
 	},
 	resolve: {
 		modules: [
@@ -117,6 +118,11 @@ module.exports = {
 			"process.env": {
 				NODE_ENV: JSON.stringify("production") //development
 			}
+		}),
+		new webpack.optimize.CommonsChunkPlugin({
+			name: "vendor",
+			minChunks: Infinity,
+			filename: "[name].[hash].js",
 		}),
 		new webpack.optimize.UglifyJsPlugin({
 			mangle: {
