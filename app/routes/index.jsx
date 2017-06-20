@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider, connect } from "react-redux";
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import { Route, HashRouter as Router } from "react-router-dom";
 import PropTypes from "prop-types";
 
 // Get views
