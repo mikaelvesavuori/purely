@@ -10,9 +10,9 @@ import Routes from "routes/index";
 import AppWrapper from "./AppWrapper";
 import Header from "components/Header";
 
+
 class Main extends React.Component {
 	render() {
-
 		return (
 			<AppWrapper>
 				<Header text="Header" />
