@@ -1,6 +1,6 @@
 {
 	"name": "purely",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"main": "index.js",
 	"author": "Mikael Vesavuori",
 	"license": "MIT",
@@ -13,7 +13,6 @@
 		"babel-preset-react": "^6.24.1",
 		"babel-preset-stage-0": "^6.24.1",
 		"browser-sync": "^2.18.8",
-		"contentful": "^4.4.3",
 		"css-loader": "^0.28.0",
 		"eslint": "^3.19.0",
 		"eslint-loader": "^1.7.1",
