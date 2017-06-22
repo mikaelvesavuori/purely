@@ -4,9 +4,6 @@
 # Purely
 React-based SPA development boilerplate with performance in mind, inspired by [react-boilerplate](https://github.com/react-boilerplate/react-boilerplate).
 
-## Status
-Note that this project is still unstable but should be usable.
-
 ## Features
 - **Performant**: Asynchronous loading of CSS and optimized script timing with async/defer
 - **PWA and offline support**: Your site will behave like an app and be available offline
